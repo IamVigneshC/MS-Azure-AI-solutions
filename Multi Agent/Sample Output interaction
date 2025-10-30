@@ -1,0 +1,26 @@
+Creating agent thread.
+
+What's the support problem you need to resolve?: Unable to use 91367 CPT code to update billing
+
+Processing agent thread. Please wait.
+MessageRole.USER:
+Unable to use 91367 CPT code to update billing
+
+MessageRole.AGENT:
+### Ticket Triage Summary
+
+- **Priority:** High  
+  This ticket is marked as high priority due to its blocking impact on billing functionality【message:0:0†source】.
+
+- **Team Assigned:** Backend  
+  Billing functionality issues are typically handled by the backend team as they involve system code and configurations【message:0:1†source】.
+
+- **Effort:** Small  
+  Resolving this issue will likely involve investigating and fixing configuration or code related to the 91367 CPT code, which can usually be completed within one day unless more complex underlying issues are discovered【message:0:2†source】.
+
+Cleaning up agents:
+Deleted triage agent.
+Deleted priority agent.
+Deleted team agent.
+Deleted effort agent.
+(labenv) PS /home/user1-56103178/ai-agents/Labfiles/03b-build-multi-agent-solution/Python> quit
