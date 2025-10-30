@@ -1,0 +1,24 @@
+Category,Cost
+Accommodation, 674.56
+Transportation, 2301.00
+Meals, 267.89
+Misc., 34.50
+
+Uploaded data.txt
+Using agent: data-agent
+Enter a prompt (or type 'quit' to exit): What's the category with the highest cost?
+Last Message: The category with the highest cost is **Transportation**, which amounts to **2301.0**.
+Enter a prompt (or type 'quit' to exit): Create a text-based bar chart showing cost by category
+Last Message: Here is the text-based bar chart showing the cost by category:
+
+```
+Accommodation   | ############## (674.56)
+Transportation  | ################################################## (2301.00)
+Meals           | ##### (267.89)
+Misc.           |  (34.50)
+```
+
+Each bar's length is proportional to its corresponding cost, with numbers shown beside each bar.
+Enter a prompt (or type 'quit' to exit): What's the standard deviation of cost?
+Last Message: The standard deviation of the costs is approximately **1022.47**.
+Enter a prompt (or type 'quit' to exit): quit
