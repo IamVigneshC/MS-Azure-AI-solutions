@@ -1,0 +1,29 @@
+$ python main.py
+
+# The script first clears the console (os.system('cls' or 'clear')), then prints the data and prompts for input.
+
+Here is the expenses data in your file:
+
+Date: 2025-01-10, Item: Taxi, Cost: 25.50
+Date: 2025-01-10, Item: Lunch, Cost: 15.00
+Date: 2025-01-11, Item: Dinner, Cost: 45.99
+
+
+What would you like me to do with it?
+
+# --- User Input is entered here ---
+Please submit an expense claim for this data. 
+
+# --- The agent processes the request and internally calls the 'send_email' tool, which prints its arguments. ---
+
+To: expenses@contoso.com
+Subject: Expense Claim
+Date: 2025-01-10, Item: Taxi, Cost: 25.50
+Date: 2025-01-10, Item: Lunch, Cost: 15.00
+Date: 2025-01-11, Item: Dinner, Cost: 45.99
+Total: 86.49 
+
+# --- The agent generates its final response based on the instructions and tool-call success. ---
+
+# Agent:
+I have submitted your expense claim via email to expenses@contoso.com with the subject 'Expense Claim'. The body contains the itemized expenses totaling $86.49.
