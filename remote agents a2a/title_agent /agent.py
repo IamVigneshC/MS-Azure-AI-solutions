@@ -28,7 +28,14 @@ class TitleAgent:
             return self.agent
 
         # Create the title agent
-
+        self.agent = self.client.create_agent(
+        model=os.environ['MODEL_DEPLOYMENT_NAME'],
+        name='title-agent',
+        instructions="""
+        You are a helpful writing assistant.
+        Given a topic the user wants to write about, suggest a single clear and catchy blog post title.
+        """,
+        )
 
         return self.agent
         
