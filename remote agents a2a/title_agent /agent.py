@@ -10,7 +10,6 @@ class TitleAgent:
     def __init__(self):
 
         # Create the agents client
-        # Create the agents client
         self.client = AgentsClient(
             endpoint=os.environ['PROJECT_ENDPOINT'],
             credential=DefaultAzureCredential(
@@ -46,13 +45,13 @@ class TitleAgent:
             await self.create_agent()
 
         # Create a thread for the chat session
-
+        thread = self.client.threads.create()
 
         # Send user message
-        
+        self.client.messages.create(thread_id=thread.id, role=MessageRole.USER, content=user_message)
 
         # Create and run the agent
-
+        run = self.client.runs.create_and_process(thread_id=thread.id, agent_id=self.agent.id)
 
         if run.status == 'failed':
             print(f'Title Agent: Run failed - {run.last_error}')
