@@ -1,0 +1,106 @@
+{
+	"id": "dc74e0c5-1977-41a9-b513-6b3580d3b832",
+	"status": "Succeeded",
+	"result": {
+		"analyzerId": "slide-analyzer",
+		"apiVersion": "2025-05-01-preview",
+		"createdAt": "2025-11-24T17:41:48Z",
+		"warnings": [],
+		"contents": [
+			{
+				"markdown": "![image](image)\n",
+				"fields": {
+					"Title": {
+						"type": "string",
+						"valueString": "Contoso Ltd."
+					},
+					"Summary": {
+						"type": "string",
+						"valueString": "The slide shows the quarterly revenue for Contoso Ltd. across four quarters."
+					},
+					"Charts": {
+						"type": "integer",
+						"valueInteger": 1
+					},
+					"QuarterlyRevenue": {
+						"type": "array",
+						"valueArray": [
+							{
+								"type": "object",
+								"valueObject": {
+									"Quarter": {
+										"type": "string",
+										"valueString": "Quarter 1"
+									},
+									"Revenue": {
+										"type": "number",
+										"valueNumber": 65000
+									}
+								}
+							},
+							{
+								"type": "object",
+								"valueObject": {
+									"Quarter": {
+										"type": "string",
+										"valueString": "Quarter 2"
+									},
+									"Revenue": {
+										"type": "number",
+										"valueNumber": 55000
+									}
+								}
+							},
+							{
+								"type": "object",
+								"valueObject": {
+									"Quarter": {
+										"type": "string",
+										"valueString": "Quarter 3"
+									},
+									"Revenue": {
+										"type": "number",
+										"valueNumber": 60000
+									}
+								}
+							},
+							{
+								"type": "object",
+								"valueObject": {
+									"Quarter": {
+										"type": "string",
+										"valueString": "Quarter 4"
+									},
+									"Revenue": {
+										"type": "number",
+										"valueNumber": 65000
+									}
+								}
+							}
+						]
+					},
+					"ProductCategories": {
+						"type": "array"
+					}
+				},
+				"kind": "document",
+				"startPageNumber": 1,
+				"endPageNumber": 1,
+				"unit": "pixel",
+				"pages": [
+					{
+						"pageNumber": 1,
+						"spans": []
+					}
+				]
+			}
+		]
+	},
+	"usage": {
+		"tokens": {
+			"contextualization": 1000,
+			"gpt-4o-input": 581,
+			"gpt-4o-output": 82
+		}
+	}
+}
