@@ -1,0 +1,83 @@
+Requesting a Cloud Shell.Succeeded. 
+Connecting terminal...
+
+Welcome to Azure Cloud Shell
+
+Type "az" to use Azure CLI
+Type "help" to learn about Cloud Shell
+
+Your Cloud Shell session will be ephemeral so no files or system changes will persist beyond your current session.
+
+MOTD: SqlServer has been updated to Version 22!
+
+VERBOSE: Authenticating to Azure ...
+WARNING: You're using Az version 14.6.0. The latest version of Az is 15.0.0. Upgrade your Az modules using the following commands:
+  Update-PSResource Az -WhatIf    -- Simulate updating your Az modules.
+  Update-PSResource Az            -- Update your Az modules.
+There will be breaking changes from 14.6.0 to 15.0.0. Open https://go.microsoft.com/fwlink/?linkid=2241373 and check the details.
+VERBOSE: Building your Azure drive ...
+PS /home/user1-57027574> rm -r mslearn-ai-language -f                                      
+PS /home/user1-57027574> git clone https://github.com/microsoftlearning/mslearn-ai-language
+Cloning into 'mslearn-ai-language'...
+remote: Enumerating objects: 1745, done.
+remote: Counting objects: 100% (513/513), done.
+remote: Compressing objects: 100% (194/194), done.
+remote: Total 1745 (delta 423), reused 321 (delta 319), pack-reused 1232 (from 2)
+Receiving objects: 100% (1745/1745), 7.39 MiB | 21.99 MiB/s, done.
+Resolving deltas: 100% (849/849), done.
+PS /home/user1-57027574> cd mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis        
+PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> ls -a -l
+total 24
+drwxr-xr-x 3 user1-57027574 user1-57027574 4096 Nov 25 16:22 .
+drwxr-xr-x 3 user1-57027574 user1-57027574 4096 Nov 25 16:22 ..
+-rw-r--r-- 1 user1-57027574 user1-57027574   95 Nov 25 16:22 .env
+-rw-r--r-- 1 user1-57027574 user1-57027574   13 Nov 25 16:22 requirements.txt
+drwxr-xr-x 2 user1-57027574 user1-57027574 4096 Nov 25 16:22 reviews
+-rw-r--r-- 1 user1-57027574 user1-57027574  888 Nov 25 16:22 text-analysis.py
+PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> python -m venv labenv       ./labenv/bin/Activate.ps1                                         
+pip install -r requireme
+PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> ./labenv/bin/Activate.ps1pip install -r requirements.txt azure-ai-textanalytics==5.3.0
+./labenv/bin/Activate.ps1pip: The term './labenv/bin/Activate.ps1pip' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> python -m venv labenv                                                                         
+PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> ./labenv/bin/Activate.ps1
+(labenv) PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> pip install -r requirements.txt azure-ai-textanalytics==5.3.0                                 
+Collecting azure-ai-textanalytics==5.3.0
+  Downloading azure_ai_textanalytics-5.3.0-py3-none-any.whl.metadata (82 kB)
+Collecting python-dotenv (from -r requirements.txt (line 1))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting azure-core<2.0.0,>=1.24.0 (from azure-ai-textanalytics==5.3.0)
+  Downloading azure_core-1.36.0-py3-none-any.whl.metadata (47 kB)
+Collecting azure-common~=1.1 (from azure-ai-textanalytics==5.3.0)
+  Downloading azure_common-1.1.28-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting isodate<1.0.0,>=0.6.1 (from azure-ai-textanalytics==5.3.0)
+  Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+Collecting typing-extensions>=4.0.1 (from azure-ai-textanalytics==5.3.0)
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting requests>=2.21.0 (from azure-core<2.0.0,>=1.24.0->azure-ai-textanalytics==5.3.0)
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.21.0->azure-core<2.0.0,>=1.24.0->azure-ai-textanalytics==5.3.0)
+  Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests>=2.21.0->azure-core<2.0.0,>=1.24.0->azure-ai-textanalytics==5.3.0)
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.21.0->azure-core<2.0.0,>=1.24.0->azure-ai-textanalytics==5.3.0)
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.21.0->azure-core<2.0.0,>=1.24.0->azure-ai-textanalytics==5.3.0)
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Downloading azure_ai_textanalytics-5.3.0-py3-none-any.whl (298 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+Downloading azure_core-1.36.0-py3-none-any.whl (213 kB)
+Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Installing collected packages: azure-common, urllib3, typing-extensions, python-dotenv, isodate, idna, charset_normalizer, certifi, requests, azure-core, azure-ai-textanalytics
+Successfully installed azure-ai-textanalytics-5.3.0 azure-common-1.1.28 azure-core-1.36.0 certifi-2025.11.12 charset_normalizer-3.4.4 idna-3.11 isodate-0.7.2 python-dotenv-1.2.1 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.5.0
+
+[notice] A new release of pip is available: 24.3.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+(labenv) PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> code .env          (labenv) PS /home/user1-57027574/mslearn-ai-language/Labfiles/01-analyze-text/Python/text-analysis> code text-analysis.py    
