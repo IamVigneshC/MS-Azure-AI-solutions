@@ -1,0 +1,66 @@
+Enter some text ("quit" to stop)
+What time is it in London?
+
+view top intent:
+    top intent: GetTime
+    category: GetTime
+    confidence score: 0.95
+
+view entities:
+    category: Location
+    text: London
+    confidence score: 0.92
+
+query: What time is it in London?
+15:40   <-- (current UTC time, formatted by GetTime)
+
+
+Enter some text ("quit" to stop)
+What day is 12/25/2025?
+
+view top intent:
+    top intent: GetDay
+    category: GetDay
+    confidence score: 0.93
+
+view entities:
+    category: Date
+    text: 12/25/2025
+    confidence score: 0.90
+
+query: What day is 12/25/2025?
+Thursday
+
+
+Enter some text ("quit" to stop)
+What date is Sunday?
+
+
+view top intent:
+    top intent: GetDate
+    category: GetDate
+    confidence score: 0.91
+
+view entities:
+    category: Weekday
+    text: Sunday
+    confidence score: 0.88
+
+query: What date is Sunday?
+11/30/2025
+
+
+Enter some text ("quit" to stop)
+Tell me a joke
+
+
+view top intent:
+    top intent: None
+    category: None
+    confidence score: 0.40
+
+view entities:
+
+query: Tell me a joke
+Try asking me for the time, the day, or the date.
+
