@@ -1,0 +1,121 @@
+{
+    "projectFileVersion": "2025-05-15-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "settings": {
+            "confidenceThreshold": 0,
+            "normalizeCasing": false,
+            "augmentDiacritics": false
+        },
+        "projectName": "Clock",
+        "multilingual": false,
+        "description": "Natural language clock",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [
+            {
+                "category": "None",
+                "description": "Used when the user's input doesn't match any known intent or is out of scope."
+            },
+            {
+                "category": "GetTime"
+            },
+            {
+                "category": "GetDay"
+            },
+            {
+                "category": "GetDate"
+            }
+        ],
+        "entities": [],
+        "utterances": [
+            {
+                "text": "what's today's date?",
+                "language": "en-us",
+                "intent": "GetDate",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what is the date today?",
+                "language": "en-us",
+                "intent": "GetDate",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what's the date?",
+                "language": "en-us",
+                "intent": "GetDate",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what date is it?",
+                "language": "en-us",
+                "intent": "GetDate",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what day of the week is it?",
+                "language": "en-us",
+                "intent": "GetDay",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what is the day today?",
+                "language": "en-us",
+                "intent": "GetDay",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what's the day?",
+                "language": "en-us",
+                "intent": "GetDay",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what day is it?",
+                "language": "en-us",
+                "intent": "GetDay",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "tell me the time",
+                "language": "en-us",
+                "intent": "GetTime",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what time is it?",
+                "language": "en-us",
+                "intent": "GetTime",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what's the time?",
+                "language": "en-us",
+                "intent": "GetTime",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what is the time?",
+                "language": "en-us",
+                "intent": "GetTime",
+                "entities": [],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
