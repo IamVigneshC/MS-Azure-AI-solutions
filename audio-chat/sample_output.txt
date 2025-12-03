@@ -1,0 +1,10 @@
+
+Ask a question about the audio
+(or type 'quit' to exit)
+Can you summarize this customer's voice message? Is it time-sensitive?
+Getting a response ...
+
+This customer is a representative of a store called Quinto's Cake Shop located in Midtown Manhattan. He/she is calling to place a large order of strawberries to be used in their springtime desserts for an upcoming spring festival. The store needs two boxes of fresh strawberries to be delivered by Friday. The customer requests to be called back for confirmation purposes.
+
+Ask a question about the audio
+(or type 'quit' to exit)
