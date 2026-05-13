@@ -1,0 +1,7 @@
+{
+    "servers": {
+        "my-mcp-server-1c31dad5": {
+            "url": "https://jokesmcp-http-typescript.victoriousbay-cd1eb542.eastus2.azurecontainerapps.io/mcp"
+        }
+    }
+}
